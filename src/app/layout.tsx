@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Menu } from '@/components/menu';
 
 export const metadata: Metadata = {
   title: 'Neko',
@@ -13,6 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <Menu />
       <body>{children}</body>
     </html>
   );
